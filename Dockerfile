@@ -1,7 +1,6 @@
 FROM alpine:latest
 
-RUN apk add --update samba-common-tools samba-server
-RUN rm -rf /var/cache/apk/*
+RUN apk add --no-cache --update samba-common-tools samba-server
 
 EXPOSE 445/tcp
 
