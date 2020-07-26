@@ -25,6 +25,8 @@ docker run -d -p 445:445/tcp \
   matthewhuie/docker-samba
 ```
 
+For discovery, a sample Avahi service file is available in this repo.
+
 ## Links
 - https://github.com/matthewhuie/docker-samba
 - https://hub.docker.com/r/matthewhuie/docker-samba
