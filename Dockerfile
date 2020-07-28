@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-RUN apk add --no-cache --update samba-common-tools samba-server
+RUN apk add --no-cache --update samba-server
 
 EXPOSE 445/tcp
 
