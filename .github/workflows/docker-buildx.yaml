@@ -17,6 +17,6 @@ jobs:
       - name: Docker Buildx
         run: |
           docker buildx build --push \
-            --tag matthewhuie/docker-samba:latest \
-            --tag matthewhuie/docker-samba:$(git rev-parse --short HEAD) \
+            --tag matthewhuie/samba:latest \
+            --tag matthewhuie/samba:$(git rev-parse --short HEAD) \
             --platform linux/amd64,linux/arm/v7,linux/arm64 .

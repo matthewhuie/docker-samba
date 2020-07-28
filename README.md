@@ -6,12 +6,12 @@ This is a Docker container that provides a lightweight and generic Samba instanc
 ## Getting Started
 Pull the image from Docker Hub.
 ```bash
-docker pull matthewhuie/docker-samba
+docker pull matthewhuie/samba
 ```
 
 Create and start a container. For example, use default smb.conf, publish 445/TCP only, and run detached.
 ```bash
-docker run -d -p 445:445/tcp matthewhuie/docker-samba
+docker run -d -p 445:445/tcp matthewhuie/samba
 ```
 
 Keep in mind, this is a barebones instance of Samba, allowing more flexibility on how the image can be used. 
@@ -24,12 +24,12 @@ docker run -d -p 445:445/tcp \
   -v /etc/secret:/etc/secret:ro \
   -v /var/lib/samba:/var/lib/samba \
   -v /mnt/SHARE_PATH_HERE:/mnt/SHARE_PATH_HERE \
-  matthewhuie/docker-samba
+  matthewhuie/samba
 ```
 
 For discovery, a sample Avahi service file is available in this repo.
 
 ## Links
 - https://github.com/matthewhuie/docker-samba
-- https://hub.docker.com/r/matthewhuie/docker-samba
+- https://hub.docker.com/r/matthewhuie/samba
 - https://www.samba.org/
