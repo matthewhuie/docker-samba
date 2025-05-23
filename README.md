@@ -1,7 +1,7 @@
 # docker-samba
 This is a Docker container that provides a lightweight and generic Samba instance, based on Alpine Linux. It provides the latest version of Samba, running on the latest version of Alpine Linux. This repository currently builds for multi-arch: ARMv7, ARM64, and AMD64.
 
-![buildx](https://github.com/matthewhuie/docker-samba/workflows/buildx/badge.svg?branch=master)
+![buildx](https://github.com/matthewhuie/docker-samba/workflows/docker-buildx/badge.svg?branch=master)
 
 ## Getting Started
 Pull the image from Docker Hub.
